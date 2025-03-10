@@ -24,7 +24,8 @@ jobs:
       - build
     runs-on: ubuntu:latest
     steps:
-      - checkout
+      - name: Checkout repository
+        uses: actions/checkout@v3
       - run:
           name: "Publish release on GitHub"
           env:
